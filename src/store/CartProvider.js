@@ -7,7 +7,7 @@ import React from "react";
 //we are useing here useReducer for adding/removing items from cart becuse this process contains complex logic , we can also use useState
 
 
-//we have created  these two function outside the componentbecause they don't need any data from the component but they are passed inside the component by useReducer hook
+//we have created  these two function outside the component because they don't need any data from the component but they are passed inside the component by useReducer hook
 const defaultCartState={
   items:[], 
   totalAmount:0

@@ -1,9 +1,9 @@
 
 import React from 'react'
 import classes from './input.module.css'
-
-//here we are using React.forwardRef to access ref in input component without it we can't use ref in input component
-const Input = React.forwardRef((props,ref)=> {
+import { forwardRef } from 'react';
+//here we are using React.forwardRef to access ref in input component without it we can't use ref in input customized  component
+const Input = forwardRef((props,ref)=> {
   return (
     <div className={classes.input}>
         <label htmlFor={props.input.id}>{props.label}</label>
